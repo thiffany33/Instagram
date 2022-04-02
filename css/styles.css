@@ -14,21 +14,18 @@ ion-icon {
 
 .container {
     width: 935px;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    background-color: purple;
+    margin: 0 auto;
 }
 
 .navContainer {
+    position: fixed;
     width: 100%;
     height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #ffffff;
     border-bottom: 1px solid #eaeaea;
 }
 
@@ -82,6 +79,105 @@ ion-icon {
 
 .navMobile {
     display: none;
+}
+
+.containerFeed {
+    max-width: 614px;
+    width: 614px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storiesContainer {
+    height: 88px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 88px 0 24px 0;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.storiesContainer>div>div {
+    background-image: url("../images/stories_background.png");
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    margin-right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storiesContainer img {
+    width: 56px;
+    height: auto;
+}
+
+.storiesContainer>ion-icon {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileContent p {
+    margin-left: 20px;
+    margin-top: 1px;
+    font-size: 12px;
+    color: #262626;
+    font-weight: 400;
+}
+
+.profilePhoto {
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 14px;
+}
+
+.containerPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 749px;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+.containerSideBar {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
+
+.contentSideBar {
+    width: 293px;
+    height: 300px;
+    background: #fafafa;
+    position: fixed;
+    top: 88px;
+    margin: 0 20px;
 }
 
 @media (max-width: 614px) {
